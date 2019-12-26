@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "mono:pixelsize=16:antialias=true:autohint=true";
-static char *font2[] = { "Inconsolata for Powerline:pixelsize=16:antialias=true:autohint=true" };
+static char *font = "mono:pixelsize=12:antialias=true:autohint=true";
+static char *font2[] = { "Cascadia Code:pixelsize=12:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
@@ -36,7 +36,7 @@ static float chscale = 1.0;
 wchar_t *worddelimiters = L" ";
 
 /* selection timeouts (in milliseconds) */
-static unsigned int doubleclicktimeout = 300;
+static unsigned int doubleclicktimeout h= 300;
 static unsigned int tripleclicktimeout = 600;
 
 /* alt screens */
@@ -84,30 +84,30 @@ char *termname = "st-256color";
 unsigned int tabspaces = 8;
 
 /* bg opacity */
-float alpha = 0.92;
+float alpha = 1;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-	"#cc241d",
-	"#98971a",
-	"#d79921",
-	"#458588",
-	"#b16286",
-	"#689d6a",
-	"#a89984",
-	"#928374",
-	"#fb4934",
-	"#b8bb26",
-	"#fabd2f",
-	"#83a598",
-	"#d3869b",
-	"#8ec07c",
-	"#ebdbb2",
+	"#272822", /* hard contrast: #1d2021 / soft contrast: #32302f */
+	"#F92672",
+	"#A6E22E",
+	"#F4BF75",
+	"#66D9EF",
+	"#AE81FF",
+	"#A1EFE4",
+	"#F8F8F2",
+	"#75715E",
+	"#F92672",
+	"#A6E22E",
+	"#F4BF75",
+	"#66D9EF",
+	"#AE81FF",
+	"#A1EFE4",
+	"#F9F8F5",
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#282828",   /* 256 -> bg */
-	"#ebdbb2",   /* 257 -> fg */
+	"#272822",   /* 256 -> bg */
+	"#F8F8F2",   /* 257 -> fg */
 	"#add8e6", /* 258 -> cursor */
 };
 
